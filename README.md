@@ -322,6 +322,13 @@ We welcome contributions! Check out our [Contributing Guide](CONTRIBUTING.md) to
 
 Explore upcoming features and priorities on our [Roadmap](https://roadmap.sh/r/ottodev-roadmap-2ovzo).
 
+## Mini Video Player Extension
+
+Check out the new browser extension under `extensions/mini-video-player`.
+It shrinks any video into a floating window with rounded corners,
+volume control and quick skip buttons. See the extension README for
+installation details.
+
 ---
 
 ## FAQ
