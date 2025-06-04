@@ -34,19 +34,19 @@ export const CodeBlock = memo(
       }, 2000);
     };
 
-    useEffect(() => {
-      if (language && !isSpecialLang(language) && !(language in bundledLanguages)) {
-        logger.warn(`Unsupported language '${language}'`);
-      }
+      useEffect(() => {
+        if (language && !isSpecialLang(language) && !(language in bundledLanguages)) {
+          logger.warn(`Unsupported language '${language}'`);
+        }
 
       logger.trace(`Language = ${language}`);
 
-      const processCode = async () => {
-        setHTML(await codeToHtml(code, { lang: language, theme }));
-      };
+        const processCode = async () => {
+          setHTML(await codeToHtml(code, { lang: language, theme }));
+        };
 
-      processCode();
-    }, [code]);
+        processCode();
+      }, [code, language, theme]);
 
     return (
       <div className={classNames('relative group text-left', className)}>
