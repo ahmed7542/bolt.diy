@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Mini Video Player",
+  "version": "1.0",
+  "description": "Shrink videos into a floating player with advanced controls.",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
